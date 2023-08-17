@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Science Quiz</title>
+    <meta charset="utf-8" />
+    <meta name="description" content=" This is a 30 question quiz website  " />
+    <meta name="keywords" content=" quiz, questions" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/icon_image.png" type="image/icon" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css " />
+    <script src="./javascript/main.js " defer></script>
+  </head>
+  <body>
+    <div id="home"></div>
+    <header>
+      <h1>Science Rocks!</h1>
+      <nav>
+        <ul>
+          <li><a href="#quiz_nav">Quiz</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+
+    <section id="about">
+      <div class="about-container">
+        <h2>About This Quiz</h2>
+        <div class="about_paragraph_container">
+            <p>
+              Get ready to test your knowledge with this lively quiz! Dive into a
+              world of scientific wonders and curious facts that will leave you
+              amazed and entertained. From unraveling the mysteries of matter's
+              tiniest building blocks to uncovering the layers of Earth's protective
+              shield in the sky, these questions will whisk you away on an
+              educational adventure. Ever wondered how rocks play hide-and-seek in
+              the grand scheme of things? Or how plants whip up energy from
+              sunlight? It's all here, sprinkled with a dash of science magic. So,
+              are you ready to flex those brain muscles and conquer questions about
+              everything from atoms to zany phenomena? Let's embark on a quest of
+              learning and fun!
+            </p>
+          </div>
+          <p>The quiz has 30 multiple-choice questions</p>
+          <p>Good luck, and have fun!</p>
+          <div class="image-container">
+            <img
+              width="400"
+              height="400"
+            id="about_image" src="./images/about_image.png" alt="Image with smaller images inside of it" />
+          </div>
+        </div>
+    </section>
+
+    <section class="quiz_container">
+      <div id="quiz_nav"></div>
+      <h1 class="quiz_title">
+        Test your knowledge about various science questions
+      </h1>
+      <div id="quiz">
+        <!-- quiz questions and answers will be generated here -->
+      </div>
+  
+      <div id="quiz_results">
+        <!-- THIS IS WHERE THE RESULTS OF THE QUIZ WILL BE-->
+      </div>
+  
+      <button onclick="window.location.reload() " class="retry-button">
+        Retry
+      </button>
+      <div id="progress-bar">
+        <div id="progress-bar-fill"></div>
+      </div>
+
+    </section>
+
+
+    <!-- THIS IS THE GOING HOME BUTTON-->
+    <a href="#home" class="home-button">Home</a>
+
+    <!-- THIS IS THE CONTACT ME SECTION-->
+    <section id="contact">
+      <h2>Let Me Know What Subject You Would Like To See Next!</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+
+    <footer>
+      <div class="footer-content">
+        <h3>Contact Us</h3>
+        <p>Email us at:</p>
+        <a href="mailto:info@example.com">morequizes@quizes.com</a>
+      </div>
+      <div class="footer-content">
+        <h3>More Info</h3>
+        <p> Made 2023 Jan</p>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
